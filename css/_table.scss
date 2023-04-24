@@ -1,0 +1,42 @@
+.table {
+    font-size: 0.875rem;
+    overflow-y: auto;
+    @media (max-width: 1220px) {
+        margin-right: -1.5rem;
+    }
+    .table_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 1000px;
+        .table_row {
+            display: flex;
+            width: 100%;
+            &.table_head {
+                color: $orange;
+                font-family: InterSemiBold;
+                background-color: $gray;
+            }
+            .table_cell {
+                flex-grow: 1;
+                padding: 0.8em 1.25em;
+                overflow: hidden;
+                white-space: nowrap;
+                &.engine_cell {
+                    width: 50%;
+                }
+                &.model_cell {
+                    width: 15%;
+                }
+                &.weight_cell, &.battery_cell {
+                    width: 7%;
+                }
+                &.speed_cell, &.frame_cell {
+                    width: 10.5%;
+                }
+            }
+            &.is_striped {
+                background-color: #fff;
+            }
+        }
+    }
+}

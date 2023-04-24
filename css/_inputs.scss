@@ -1,0 +1,58 @@
+.input_container {
+    height: 56px;
+    padding: 1rem;
+    background-color: #fff;
+    border-bottom: 1px solid #dedede;
+    border-radius: 4px 4px 0 0;
+    border-bottom: 1px solid $medium-gray;
+    position: relative;
+    form {
+        @include flex-center();
+        justify-content: space-between;
+        height: 100%;
+        input, textarea {
+            height: 100%;
+            width: 100%;
+            outline: none;
+            border: none;
+            background-color: transparent;
+            font-family: InterRegular;
+            &::placeholder {
+                color: $primary-text-color;
+                font-size: 0.875rem;
+            }
+        }
+    }
+    &.gray {
+        background-color: $gray;
+    }
+    &.textarea_field {
+        height: 128px;
+        textarea {
+            resize: none;
+        }
+    }
+    &.select_box {
+        padding: 8px 1rem;
+        form {
+            flex-direction: column;
+            align-items: baseline;
+        }
+    }
+    select {
+        border: none;
+        width: calc(100% - 1rem);
+        padding: 0px;
+        font-size: 14px;
+        position: absolute;
+        left: 11px;
+        top: 23px;
+        outline: none;
+        font-family: InterRegular;
+    }
+    label {
+        color: $darkest-gray;
+        font-size: 0.6875rem;
+    }
+}
+

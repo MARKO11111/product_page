@@ -1,0 +1,32 @@
+.btn {
+    font-family: PoppinsSemiBold;
+    border-radius: 0.25rem;
+    white-space: nowrap;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    &.primary {
+        border: 1px solid $green;
+        color: $secondary-text-color;
+        background: $green;
+    }
+    &.secondary {
+        border: 1px solid $medium-gray;
+        color: $green;
+        background: #fff;
+    }
+    &.tertiary {
+        border: 1px solid $medium-gray;
+        color: $orange;
+        background: #fff;
+    }
+    &.orange_primary {
+        border: 1px solid $orange;
+        color: $secondary-text-color;
+        background: $orange;
+    }
+    &.orange_secondary {
+        border: 1px solid transparent;
+        color: $orange;
+        background: #fff;
+    }
+}
